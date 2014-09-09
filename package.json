@@ -1,0 +1,22 @@
+{
+  "name": "dev-challenge",
+  "version": "1.0.0",
+  "description": "Turner Dev Challenge",
+  "author": "Shahm Nattarshah",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.6.1",
+    "bower": "^1.3.1"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "http-server -p 8080"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.1"
+  }
+}

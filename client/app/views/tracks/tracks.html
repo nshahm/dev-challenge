@@ -1,0 +1,65 @@
+<div ng-controller="LocalStorageCtrl">
+    <div ng-controller="TracksCtrl" ng-init="getAlbumTracks()">
+        <div class="col-md-12">
+              <div class="col-md-12 column">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>
+                            #
+                        </th>
+                        <th>
+                            Favorite
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Duration
+                        </th>
+                        <th>
+                            Preview
+                        </th>
+                        <th>
+                            Spotify
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody ng-repeat="track in albumTracks">
+                    <tr>
+                        <td>
+                            {{track.track_number}}
+                        </td>
+                        <td>
+
+                            <div ng-switch on="exist(track.id)">
+                                <div ng-switch-when="true">
+                                    <img class="pull-right" height="24" width="24" type="button" src="app/assets/images/star.png" ng-click="remove(track.id)" />
+                                </div>
+                            <div ng-switch-when="false">
+                                    <img class="pull-right" height="24" width="24" type="button" src="app/assets/images/nostar.png" ng-click="set(track.id)" />
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            {{track.name}}
+                        </td>
+                        <td>
+                            {{ ((track.duration_ms / 1000) / 60 ) | number : 2}}
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="{{ track.preview_url | trustURL }}"></source>
+                            </audio>
+                        </td>
+                        <td>
+                            <a target="_blank" ng-href = "{{ track.external_urls.spotify }}">{{track.name}}</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+             </div>
+        </div>
+    </div>
+</div>

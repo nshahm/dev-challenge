@@ -1,0 +1,12 @@
+<div ng-controller="AlbumsCtrl" ng-init="getArtistAlbums(true)">
+    <div  infinite-scroll="getArtistAlbums(false)" infinite-scroll-distance="1" infinite-scroll-disabled="busy" infinite-scroll-immediate-check="false">
+        <ngx-tile ng-repeat="album in artistAlbums"
+                  id = "{{album.id}}"
+                  title = "{{album.name}}"
+                  image = "{{album.images[1].url}}"
+                  type = "{{ album.type }}"
+                  tile-type = "album"
+                  url="#/album/{{ album.id }}/tracks">
+        </ngx-tile>
+    </div>
+</div>

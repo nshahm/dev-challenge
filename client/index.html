@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="audioPlayerApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- Remove all the caching -->
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+
+    <title>Dev Challenge -Using Spotify API </title>
+
+    <!-- app specific CSS -->
+    <link rel="stylesheet" href="app/styles/app.css" />
+
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div>
+        <!-- Including header -->
+        <div ng-include src="'app/views/header.html'"></div>
+
+        <!-- ng-view used for router as a placeholder to replace a rendering page -->
+        <div ng-view></div>
+
+        <!-- including footer -->
+        <div ng-include src="'app/views/footer.html'"></div>
+    </div>
+
+
+    <!-- bootstrap -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+
+    <!-- angular specific dependencies -->
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <!-- ng-infinite scroll -->
+    <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+
+    <script src="bower_components/angular-local-storage/angular-local-storage.js"></script>
+
+    <!-- Albums/ Artist/ Common scripts -->
+    <script src="app/app.js"></script>
+    <script src="app/scripts/albums/controller/AlbumsController.js"></script>
+    <script src="app/scripts/albums/service/AlbumsService.js"></script>
+
+    <script src="app/scripts/artists/controller/ArtistsController.js"></script>
+    <script src="app/scripts/artists/service/ArtistsService.js"></script>
+
+    <script src="app/scripts/tracks/controller/TracksController.js"></script>
+    <script src="app/scripts/tracks/service/TracksService.js"></script>
+
+    <script src="app/scripts/common/filter/trustURL.js"></script>
+    <script src="app/scripts/common/directive/ngxTile.js"></script>
+    <script src="app/scripts/common/controller/LocalStorageController.js"></script>
+    <!-- end -->
+
+</body>
+</html>

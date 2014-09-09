@@ -1,0 +1,25 @@
+
+.thumb {
+    margin-bottom: 30px;
+}
+
+#home {
+    margin-top : 20px;
+}
+
+.bgcolor {
+    background-color: #2980b9;
+}
+
+.results {
+    margin-top:25px;
+}
+
+#tile {
+    width : 250px;
+    height : 250px;
+    overflow: hidden;
+    cursor:pointer;
+    position : absolute;
+}
+
