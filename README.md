@@ -22,7 +22,7 @@
 <li> Ensure that you have nodejs installed, or you can download it from http://nodejs.org </li>
 <li> Go to bash or command prompt  </li>
 <li> $ Type npm install (installs the dependencies)  </li>
-<li> $ grunt (Checks for jshint, install bower dependencies and start the server.  </li>
+<li> $ grunt (Checks for jshint, install bower dependencies and start the server)  </li>
 </ol>
 You can access the application using http://localhost:8080/client/
 
