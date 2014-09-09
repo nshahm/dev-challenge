@@ -26,7 +26,7 @@
 </ol>
 You can access the application using http://localhost:8080/client/
 
-<strong>Home page - </strong> http://localhost:8080/client
-<strong>Access the albums - </strong> http://localhost:8080/client/#/artist/:artistId/albums </strong>
-<strong>Access the Tracks - </strong> http://localhost:8080/client/#/album/:albumId/tracks </strong>
+<strong>Home page - </strong> http://localhost:8080/client <br>
+<strong>Access the albums - </strong> http://localhost:8080/client/#/artist/:artistId/albums <br>
+<strong>Access the Tracks - </strong> http://localhost:8080/client/#/album/:albumId/tracks <br>
 
