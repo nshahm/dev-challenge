@@ -20,7 +20,7 @@ angular.module('audioPlayerApp')
             template : '<div id=\"tile\"  class=\"col-lg-3 col-md-4 col-sm-6 col-xs-6 thumb\">' +
                             '<div class=\"thumbnail\" >' +
                                  '<a href=\"{{ url }}\">' +
-                                    '<img class=\"img-responsive\" width="200" height="200" style="overflow-y: hidden" ng-src=\"{{image}}\" alt=\"{{ title }}\">' +
+                                    '<img class=\"img-responsive\" width="300" height="300" style="overflow-y: hidden" ng-src=\"{{image}}\" alt=\"{{ title }}\">' +
                                  '</a>' +
                                  '<div class=\"caption\">' +
                                       '<p>' +
