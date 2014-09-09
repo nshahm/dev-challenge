@@ -1,26 +1,35 @@
-Turner Dev Challenge
+<h3>Turner Dev Challenge<h3>
 
-By Shahm Nattarshah
+<strong><i>By Shahm Nattarshah</i></strong>
 
-1. Angular JS
-2. Node JS ( Only for http-server, bower and grunt dependencies).
+<b>Tech Stack:</b>
+<b>-----------</b>
 
-Assignments
----------------------------------------
-• Search for an Artist by Name - COMPLETED
-• Display the artists that match the above criteria - COMPLETED
-• Allow the user to select an artist to lookup the Albums by that artist - COMPLETED
-• Allow the user to select an Album to lookup the Tracks on that album - COMPLETED
-• Allow the user to select a Favorite Artist, Album or Track in a Favorite List - COMPLETED
+ol Angular JS
+ol Node JS ( Only for http-server, bower and grunt dependencies).
 
+<b>Assignments:</b>
+<b>------------</b>
 
-Also you can access the app by following below steps,
-1. $ install nodejs
-2. $ npm install
-3. $ grunt
+ol Search for an Artist by Name - COMPLETED
+ol Display the artists that match the above criteria - COMPLETED
+ol Allow the user to select an artist to lookup the Albums by that artist - COMPLETED
+ol Allow the user to select an Album to lookup the Tracks on that album - COMPLETED
+ol Allow the user to select a Favorite Artist, Album or Track in a Favorite List - COMPLETED
 
-4. Access the application using http://localhost:8080/client/
+<hr>
 
+<b>Steps to run the application:</b>
+<b>-----------------------------</b>
+
+ol Ensure that you have nodejs installed, or you can download it from http://nodejs.org
+ol Go to bash or command prompt
+ol $ Type npm install (installs the dependencies)
+ol $ grunt (Checks for jshint, install bower dependencies and start the server.
+
+You can access the application using http://localhost:8080/client/
+
+Home page - http://localhost:8080/client
 Access the albums - http://localhost:8080/client/#/artist/:artistId/albums
 Access the Tracks - http://localhost:8080/client/#/album/:albumId/tracks
 
